@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Mozon- Product Detail</title>
+
+    <!-- Bootstrap core CSS -->
+
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/Mozon.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+<style>
+  .body{
+   background-color: white;
+  }
+  /* Exit transition when navigating */
+body.page-transition-out {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeOutSlide 0.4s ease-in forwards;
+}
+
+@keyframes fadeInSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutSlide {
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+  .about-us{
+  width: 100%;
+  height: 80vh; 
+  background: url('./baqat/foot.jpg') top center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: -5rem;
+  justify-content: center;
+  align-items: center;
+}
+  .back{
+    height: 770px;
+    background:url('/baqat/homee1.svg') top center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0px;
+  }
+  .card {
+    width: 13rem;
+    height: 23rem;
+    border: 1px solid #ddd;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    background-color: #fbf8fd;
+    margin: 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.row {
+  width: 104%;
+  align-content: center;
+  
+}
+
+.row-1 {
+  
+  flex: 0 0 55%;
+}
+
+.row-2 {
+  flex: 0 0 20%;
+  font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(111, 19, 122);
+}
+
+.row-3 {
+  flex: 0 0 25%;
+}
+ 
+  .imgg {
+    width:100%;
+    height: auto;
+    border-radius:1rem;
+    align-self: center;
+    margin-top: 0.3rem;
+    position: relative;
+  }
+
+  
+
+  .card-text {
+    font-size: 0.95em;
+    color: #555;
+height: 4rem;  }
+
+  .card-button {
+    display: inline-block;
+    margin-top: 1rem§;
+    padding: 0.5rem 0.8rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.3rem;
+  }
+
+  .card-button:hover {
+    background-color: #0056b3;
+  }
+  @media (max-width: 767px) {
+    .card-content {
+    padding: 1rem;
+  }
+  h2{
+    font-size: 18px;
+  }
+  .card {
+    width: 9rem;
+    height: 17rem;
+    border: 1px solid #ddd;
+    border-radius: 0.7rem;
+    overflow:auto;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    background-color: #fbf8fd;
+    margin: 0.4rem 0.4rem;
+  }
+  .row {
+  width: 100%;
+  align-content: center;
+  
+}
+.fotr p{
+  font-size: 10px;
+}
+.row-1 {
+  flex: 0 0 60%;
+}
+
+.row-2 {
+  flex: 0 0 20%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(111, 19, 122);
+}
+
+.row-3 {
+  flex: 0 0 20%;
+}
+  
+  .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(111, 19, 122);
+  }
+  .card-text {
+    font-size: 0.8rem;
+    color: #555;
+   }
+  .card-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 0.8rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.3rem;
+  }
+  .card-button:hover {
+    background-color: #0056b3;
+  }
+  .imgg {
+    width:100%;
+    height: auto;
+    border-radius:0.7rem;
+    align-self: center;
+    margin: 0;
+    position:sticky;
+    padding: 0 0;
+   
+   
+  }}
+    /* Container for the whole slider */
+    .slider-container {
+      width: 100%;   /* Show 3 items (adjust width if needed) */
+      overflow: hidden;  /* Hide items that go outside the container */
+      margin: 0 auto;
+      position: relative;  /* Position buttons over the container */
+      background-color: #f3f2f2;
+     border-radius: 10px;
+     padding-right: 20px;
+    }
+
+    /* Wrapper that holds all the items */
+    .slider-wrapper {
+      display: flex;
+      flex-direction: row-reverse; /* Align items horizontally */
+      transition: transform 0.5s ease; /* Smooth sliding */
+    }
+
+    /* Individual slider items */
+    .slider-item {
+      box-sizing: border-box; /* Make sure padding doesn't affect the size */
+      padding: 0px;
+      text-align: center;
+      border-radius: 5px;
+      margin: 5px; /* Optional space between items */
+    }
+
+    /* Position for the navigation buttons */
+    .slider-buttons {
+       
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .slider-button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 20px;
+    }
+
+    .slider-button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    @media (max-width: 500px) {
+  
+  }
+  </style>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="index.html" class="logo">
+                  <img src="./baqat/mozon.png" alt="" class="shr">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav" style="margin-top: 2rem;">
+                  <li><a href="index.html" >الرئيسية</a></li>
+                  <li><a href="shop.html">المتجر </a></li>
+                  <li><a href="product-details.html" class="active">خدمات الاشتراك</a></li>
+                  <li><a href="contact.html">تواصل بنا </a></li>
+              </ul>   
+                <a class='menu-trigger'>
+                    <span>القائمة</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>الاشتراكات والباقات</h3>
+          <span class="breadcrumb"><a href="index.html">الرئيسية</a>  >  <a href="#">المتجر</a>  >  الاشتراكات والباقات </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="single-product section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="left-image">
+            <img src="./baqat/tamiouz.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <h1>باقات تميز</h1>
+          <p>تشمل باقة تميّز 81 قناة تتضمن جميع القنوات الترفيهية كالأفلام والمسلسلات والأطفال والاخبارية والوثائقية وجميع القنوات الرياضية. ✅ تتميز هذه الباقة بعرض جميع القنوات الرياضية الناقلة للدوريات الأوروبية والعالمية٬ ومن أهمها دوري أبطال أوروبا والدوري الإنجليزي والدوري الإسباني ودوري أبطال آسيا والدوري الفرنسي وغيرها.</p>
+        
+        <div class="col-lg-12">
+          <div class="sep"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section trending">
+    <div class="container">
+      <div class="row" style="justify-content: center; align-items: center;">
+        <div class="slider-container" id="slider7" data-current-index="0">
+            <div class="slider-buttons">
+                <button class="slider-button" onclick="moveSlide(1, 'slider7')">&#8592;</button>
+        <button class="slider-button" onclick="moveSlide(-1, 'slider7')">&#8594;</button>
+              </div>
+              <div class="slider-wrapper">
+                <!-- Multiple items, more than 8 -->
+               
+                <div class="slider-item"> 
+                  <div class="card">
+                    <div class="row row-1"><img src="./baqat/tz-3mth.png" class="imgg" alt="Card Image" ></div>
+                      <div class="row row-2">              <span class="category">باقة تميز ٣ اشهر خليجي </span>
+                      </div>
+                      <div class="row row-3"><div><span>450.00 <img src="./baqat/Saudi_Riyal_Symbol-1.png" style="width:20px"></span></div>
+                      <a href="https://wa.me/544294000?text=مرحبا%20اريد%20الحصول%20على%20باقة%20التميز%20خليجي%20٣اشهر" target="_blank">
+                        <i class="fa fa-shopping-bag" ></i></a>                </div>
+                  </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="card">
+                        <div class="row row-1"><img src="./baqat/tz-6mth.png" class="imgg" alt="Card Image" ></div>
+                       
+                          <div class="row row-2">              <span class="category">باقة تميز ٦ اشهر خليجي </span>
+                          </div>
+                          <div class="row row-3"><div><span>850.00 <img src="./baqat/Saudi_Riyal_Symbol-1.png" style="width:20px"></span></div>
+                          <a href="https://wa.me/544294000?text=مرحبا%20اريد%20الحصول%20على%20باقة%20التميز%20خليجي%20٦اشهر" target="_blank">
+                            <i class="fa fa-shopping-bag" ></i></a>                   </div>
+                      </div>
+                      </div>
+                      <div class="slider-item">
+                       <div class="card">
+                        <div class="row row-1"><img src="./baqat/tz-1yr.png" class="imgg" alt="Card Image" ></div>
+                          <div class="row row-2">              <span class="category">باقة تميز ١ سنه خليجي </span>
+                          </div>
+                          <div class="row row-3"><div><span>1,540.00 <img src="./baqat/Saudi_Riyal_Symbol-1.png" style="width:20px"></span></div>
+                          <a href="https://wa.me/544294000?text=مرحبا%20اريد%20الحصول%20على%20باقة%20التميز%20خليجي%20سنه" target="_blank">
+                            <i class="fa fa-shopping-bag" ></i></a>                  </div>
+                      </div>
+                    </div>
+                    <div class="slider-item">
+                      <div class="card">
+                          <div class="row row-1"> <img src="./baqat/tz-3mth.png" class="imgg" alt="Card Image" ></div>
+                          
+                            <div class="row row-2">              <span class="category">باقة تميز ٣ اشهر عربي  </span>
+                            </div>
+                            <div class="row row-3"><div><span>350.00 <img src="./baqat/Saudi_Riyal_Symbol-1.png" style="width:20px"></span></div>
+                            <a href="https://wa.me/544294000?text=مرحبا%20اريد%20الحصول%20على%20باقة%20التميز%20عربي%20٣اشهر" target="_blank">
+                              <i class="fa fa-shopping-bag" ></i></a>                         </div>
+                        </div> 
+                      </div>
+                      <div class="slider-item">
+      
+                          <div class="card">
+                              <div class="row row-1"><img src="./baqat/tz-6mth.png" class="imgg" alt="Card Image" ></div>
+                              <div class="row row-2">              <span class="category">باقة تميز ٦ اشهر عربي  </span>
+                                </div>
+                                <div class="row row-3"><div><span>650.00 <img src="./baqat/Saudi_Riyal_Symbol-1.png" style="width:20px"></span></div>
+                                <a href="https://wa.me/544294000?text=مرحبا%20اريد%20الحصول%20على%20باقة%20التميز%20عربي%20٦اشهر" target="_blank">
+                                  <i class="fa fa-shopping-bag" ></i></a>                          </div>
+                            </div>
+                          </div>
+                          <div class="slider-item">
+      
+                          <div class="card">
+                              <div class="row row-1"><img src="./baqat/tz-1yr.png" class="imgg" alt="Card Image" ></div>
+                              <div class="row row-2">              <span class="category">باقة تميز ١ سنه عربي </span>
+                                </div>
+                                <div class="row row-3"><div><span>1,250.00 <img src="./baqat/Saudi_Riyal_Symbol-1.png" style="width:20px"></span></div>
+                                <a href="https://wa.me/544294000?text=مرحبا%20اريد%20الحصول%20على%20باقة%20التميز%20عربي%20سنه" target="_blank">
+                                  <i class="fa fa-shopping-bag" ></i></a>                          </div>
+                            </div>
+                          </div>
+                              </div>
+              
+             </div>      
+      </div><hr>
+    </div>
+    </div></div>
+  <div class="single-product section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="left-image">
+            <img src="./baqat/qimma.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <h1>باقات قمة</h1>
+<p> 89 قناة رياضية وترفيهية متنوعة.</p><p>  جميع قنوات الدفع مقابل المشاهدة التي تبث أقوى البطولات العالمية كبطولة أمم أوروبا لكرة القدم وكوبا أمريكا ودوري أبطال أفريقيا
+
+  قناة 4K فائقة الجودة.</p>         
+        <div class="col-lg-12">
+          <div class="sep"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="section trending">
+    <div class="container">
+      <div class="row" style="justify-content: center; align-items: center;">
+
+        <div class="slider-container" id="slider8" data-current-index="0">
+            <div class="slider-buttons">
+                <button class="slider-button" onclick="moveSlide(1, 'slider8')">&#8592;</button>
+        <button class="slider-button" onclick="moveSlide(-1, 'slider8')">&#8594;</button>
+              </div>
+              <div class="slider-wrapper">
+                <!-- Multiple items, more than 8 -->
+               
+                <div class="slider-item">
+                  <div class="card">
+                    <div class="row row-1"><img src="./baqat/qm-3mth-kh.png" class="imgg" alt="Card Image" ></div>
+                    <div class="row row-2">             <span class="category">باقة قمة ٣ اشهر خليجي</span>
+                      </div>
+                      <div class="row row-3"><div><span>700.00 <img src="./baqat/Saudi_Riyal_Symbol-1.png" style="width:20px"></span></div>
+                      <a href="https://wa.me/544294000?text=مرحبا%20اريد%20الحصول%20على%20باقة%20قمة%20خليجي%20٣اشهر" target="_blank">
+                        <i class="fa fa-shopping-bag" ></i></a>                 </div>
+                  </div>
+                </div>
+              <div class="slider-item">
+                <div class="card">
+                    <div class="row row-1"><img src="./baqat/qm-6mth-kh.png" class="imgg" alt="Card Image" ></div>
+                    <div class="row row-2">              <span class="category">باقة قمة ٦ اشهر خليجي</span>
+                      </div>
+                      <div class="row row-3"><div><span>1,350.00 <img src="./baqat/Saudi_Riyal_Symbol-1.png" style="width:20px"></span></div>
+                      <a href="https://wa.me/544294000?text=مرحبا%20اريد%20الحصول%20على%20باقة%20قمة%20خليجي%20٦اشهر" target="_blank">
+                        <i class="fa fa-shopping-bag" ></i></a>                  </div>
+                  </div>
+                </div>
+                <div class="slider-item">
+              <div class="card">
+                  <div class="row row-1"><img src="./baqat/qm-1yr-kh.png" class="imgg" alt="Card Image" ></div>
+                  <div class="row row-2">              <span class="category">باقة قمة ١ سنه خليجي</span>
+                    </div>
+                    <div class="row row-3"><div><span>2,570.00 <img src="./baqat/Saudi_Riyal_Symbol-1.png" style="width:20px"></span></div>
+                    <a href="https://wa.me/544294000?text=مرحبا%20اريد%20الحصول%20على%20باقة%20قمة%20خليجي%20سنه" target="_blank">
+                      <i class="fa fa-shopping-bag" ></i></a>              </div>
+                </div>
+              </div>
+              <div class="slider-item">
+              <div class="card">
+                  <div class="row row-1"><img src="./baqat/qm-3mth-ar.png" class="imgg" alt="Card Image" ></div>
+                  <div class="row row-2">              <span class="category">باقة قمة ٣ اشهر عربي</span>
+                    </div>
+                    <div class="row row-3"><div><span>495.00 <img src="./baqat/Saudi_Riyal_Symbol-1.png" style="width:20px"></span></div>
+                    <a href="https://wa.me/544294000?text=مرحبا%20اريد%20الحصول%20على%20باقة%20قمة%20عربي%20٣اشهر" target="_blank">
+                      <i class="fa fa-shopping-bag" ></i></a>             </div>
+                </div>
+              </div>
+              <div class="slider-item">
+            <div class="card">
+                <div class="row row-1"><img src="./baqat/qm-6mth-ar.png" class="imgg" alt="Card Image" ></div>
+                <div class="row row-2">              <span class="category">باقة قمة ٦ اشهر عربي</span>
+                  </div>
+                  <div class="row row-3"><div><span>920.00 <img src="./baqat/Saudi_Riyal_Symbol-1.png" style="width:20px"></span></div>
+                  <a href="https://wa.me/544294000?text=مرحبا%20اريد%20الحصول%20على%20باقة%20قمة%20عربي%20٦اشهر" target="_blank">
+                    <i class="fa fa-shopping-bag" ></i></a>          </div>
+              </div>
+            </div>
+            <div class="slider-item">
+            <div class="card">
+                <div class="row row-1"><img src="./baqat/qm-1ye-ar.png" class="imgg" alt="Card Image" ></div>
+                <div class="row row-2">              <span class="category">باقة  قمة ١  سنه   عربي</span>
+                  </div>
+                  <div class="row row-3"><div><span>1,890.00 <img src="./baqat/Saudi_Riyal_Symbol-1.png" style="width:20px"></span></div>
+                  <a href="https://wa.me/544294000?text=مرحبا%20اريد%20الحصول%20على%20باقة%20قمة%20عربي%20سنه" target="_blank">
+                    <i class="fa fa-shopping-bag" ></i></a>           </div>
+              </div>
+          </div>
+              </div></div></div><hr>
+        </div>
+  </div></div>
+  </div>
+  <div class="about-us">
+    <div class="conclug">
+      <h2>روابط مهمة</h2>
+      <a href="use-polici.html"><p >سياسة الخصوصية </p></a>
+     <a href="judge.html"> <p> الشروط والاحكام</p></a>
+     <a href="replace.html"><p> سياسةالاستبدال والاسترجاع</p></a> 
+      <a href="complain.html"><p> الشكاوى والاقتراحات</p></a>
+      <a href="charge.html"><p>سياسة الشحن والتوصيل </p></a>
+      <h2>وسائل التواصل</h2>
+      <div style="display: flex; justify-content: center; "> 
+        <div href="">
+          <a href="https://wa.me/544294000?text" target="_blank">
+            <i class="fab fa-whatsapp" style="margin:2rem; color:green" > </i> </a>
+        </div>
+        <div >
+          <a href="https://wa.me/544294000?text" target="_blank">
+            <i class="fab fa-instagram" style="margin:2rem; color:rgb(150, 49, 89)"></i> </a>
+        </div>
+        <div>
+          <a href="https://wa.me/544294000?text" target="_blank">
+            <i class="fab fa-facebook" style="margin:2rem; color:rgb(18, 18, 176) "></i> </a>
+        </div>
+       
+      </div>
+    </div>
+  </div></div>
+  <footer>
+    <div class="container">
+      <div class="fotr">
+        <div>              <a href="https://wa.me/544294000?text" class="logo">
+          <img src="./baqat/whats-logo.jpeg" alt="" class="wht">
+      </a></div>
+    <div style=""><p >Copyright © MOZON Company. All rights reserved &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank"></a></p>
+    </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/customer.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/load.js"></script>
+
+
+  </body>
+</html>
