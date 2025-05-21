@@ -301,7 +301,8 @@ Header Style
 }
 
 .background-header .logo img {
-  max-width: 110px;
+  max-width: 90px;
+
 }
 
 .header-area {
@@ -328,6 +329,7 @@ Header Style
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: inline-block;
+  
 }
 
 .header-area .main-nav .logo h1 {
@@ -359,6 +361,7 @@ Header Style
 
 .header-area .main-nav .nav li:last-child {
   padding-right: 0px;
+
 }
 
 .header-area .main-nav .nav li {
@@ -366,6 +369,8 @@ Header Style
   padding-right: 10px;
   height: 40px;
   line-height: 40px;
+  margin-bottom: 20px;
+
 }
 
 .header-area .main-nav .nav li a {
@@ -388,13 +393,11 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child a {
-  background-color: #3e47ee;
   text-transform: uppercase;
   font-weight: 500;
 }
 
 .header-area .main-nav .nav li:last-child:hover a {
-  background-color: #3e47ee;
 }
 
 .header-area .main-nav .nav li:hover a {
@@ -1235,6 +1238,13 @@ Page Header Style
   position: relative;
   margin-bottom: 20px;
 }
+@media(max-width: 767px){
+
+  .page-heading h3 {
+    font-size: 24px;
+  
+  }
+}
 /* 
 ---------------------------------------------
 about-us Page Style
@@ -1732,8 +1742,15 @@ body {
 }
 
 @media (max-width: 767px) {
+  .background-header {
+ 
+    height: 80px!important;
+   
+    
+  }
+  
   .wht{
-    width: 80px;
+    width: 60px;
      border-radius: 70px; 
      margin-left:0 ;
      padding: 0;
@@ -1867,13 +1884,13 @@ flex: 0 0 20%;
     
   }
   .container{
-    width:90%;
+    width:80%;
     align-items: center;
     align-content: center;
-    justify-content: center;
-    place-content: center;
-  padding: 0;
-  margin:0 0 0 0 ;
+    justify-content: left;
+    
+  padding-right: 5rem;
+  margin:0;
   }
   .main-banner .right-image img {
     border-radius: 15px;
@@ -1885,13 +1902,18 @@ flex: 0 0 20%;
     text-align: center;
     margin-right: 2rem;
   }
+
   .about-us{
-  
-    background-image: url('/baqat/foot.jpg') top center;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-  margin: 0;
+    background: linear-gradient(rgba(38, 3, 62, 0.5), rgba(110, 12, 113, 0.5)), url('./baqat/foot.jpg') fixed center center;
+    width: 100%;
+    height:50rem; 
+   
+  }
+  @media(max-width: 767px){
+    .about-us{
+      width: 100%;
+      height:33rem; 
+    }
   }
   footer {
     margin-top: 30px;
@@ -1900,6 +1922,9 @@ flex: 0 0 20%;
     background-size: cover;
     border-radius: 0px 0px 0px 0px;
     margin-bottom: 0;
+  }
+  .fotr p{
+    font-size: 8px;
   }
 }
 @media (max-width: 992px) {
@@ -1975,10 +2000,13 @@ flex: 0 0 20%;
 
 @media (max-width: 500px) {
   .wht{
-    width: 80px;
+    width: 60px;
      border-radius: 70px; 
      margin-left:0 ;
      padding: 0;
+     margin-top: 0.8rem;
+     margin-right: 0.1rem;
+
    }
    .main-banner .caption h2 {
     font-size: 20px;
@@ -1996,7 +2024,7 @@ flex: 0 0 20%;
   }
   
   .fotr p{
-    font-size: 14px;
+    font-size: 8px;
 text-align:center;  }
 h2{
   font-size: 18px;
@@ -2091,12 +2119,6 @@ flex: 0 0 20%;
   font-size: 12px;
 
 
-  }
-  .background-header {
- 
-    height: 80px!important;
-   
-    
   }
   
 .page-heading {
